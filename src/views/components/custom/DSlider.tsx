@@ -4,7 +4,6 @@ import "swiper/css";
 const DSlider = () => {
   return (
     <div>
-      eturn (
       <Swiper
         spaceBetween={50}
         slidesPerView={3}

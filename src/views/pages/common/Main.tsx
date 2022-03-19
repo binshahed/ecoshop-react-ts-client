@@ -1,7 +1,19 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "../home/Home";
 
 const Main = () => {
-  return <div>main body</div>;
+  return (
+    <div className="container mx-auto">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}>
+            <Route index element={<Home />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 };
 
 export default Main;

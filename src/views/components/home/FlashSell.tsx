@@ -1,11 +1,11 @@
 import React from "react";
 import ProductCard from "../common/ProductCard";
 
-const FlashSell = () => {
+const FlashSell = ({ products }: { products: any[] }) => {
   return (
-    <div className="flex border-solid border-2 border-slate-400">
-      {[1, 2, 3, 4, 5].map((item) => (
-        <ProductCard />
+    <div className="d-flex row ">
+      {products.map((product) => (
+        <ProductCard product={product} />
       ))}
     </div>
   );

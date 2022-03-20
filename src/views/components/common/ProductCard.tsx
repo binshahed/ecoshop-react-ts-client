@@ -1,8 +1,8 @@
 import React from "react";
 
-const ProductCard = () => {
+const ProductCard = ({ product }: { product: any }) => {
   return (
-    <div className="p-20">
+    <div className="col-md-3">
       <div>
         <img src="" alt="" />
       </div>

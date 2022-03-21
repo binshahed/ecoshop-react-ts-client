@@ -6,7 +6,7 @@ import Home from "../home/Home";
 
 const Main = () => {
   return (
-    <div className="container">
+    <div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}>

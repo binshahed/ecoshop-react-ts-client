@@ -1,19 +1,62 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import "swiper/css";
+import { Pagination, Navigation } from "swiper";
+import "scss/DSlider.css";
 
 const DSlider = () => {
   return (
     <div>
       <Swiper
-        spaceBetween={50}
-        slidesPerView={3}
+        pagination={{
+          type: "progressbar",
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
         onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        className="mySwiper text-center"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide style={{ width: "100%" }}>
+          <div className="header slide-1">
+            <h1 className="page-heading">
+              <span className="page-heading-primary">Arison Designs</span>
+              <span className="page-heading-secondary">
+                Your future awaits!
+              </span>
+            </h1>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="header slide-2">
+            <h1 className="page-heading">
+              <span className="page-heading-primary">Arison Designs</span>
+              <span className="page-heading-secondary">
+                Your future awaits!
+              </span>
+            </h1>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="header slide-3">
+            <h1 className="page-heading">
+              <span className="page-heading-primary">Arison Designs</span>
+              <span className="page-heading-secondary">
+                Your future awaits!
+              </span>
+            </h1>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="header slide-4">
+            <h1 className="page-heading">
+              <span className="page-heading-primary">Arison Designs</span>
+              <span className="page-heading-secondary">
+                Your future awaits!
+              </span>
+            </h1>
+          </div>
+        </SwiperSlide>
       </Swiper>
     </div>
   );

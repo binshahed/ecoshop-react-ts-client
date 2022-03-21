@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <main>
-      <div className="py-5">
+      <div>
         <DSlider />
       </div>
       <div>

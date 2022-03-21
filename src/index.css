@@ -37,3 +37,11 @@ main-text-color {
   outline: none;
   box-shadow: none;
 }
+
+.dark-color {
+  color: #2d3a4b !important;
+}
+
+.dark-bg {
+  background-color: #2d3a4b !important;
+}

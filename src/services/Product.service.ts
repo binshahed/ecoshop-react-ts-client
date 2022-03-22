@@ -1,9 +1,8 @@
 import httpRequest from "./http.service";
 
 class ProductService {
-  async getAllProducts(): Promise<any> {
-    // !!change any to proper type
-    const { data } = await httpRequest.get("/user");
+  async getAllProducts(): Promise<IProduct[]> {
+    const { data } = await httpRequest.get("/users");
     return data;
   }
 }

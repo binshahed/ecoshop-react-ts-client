@@ -8,7 +8,7 @@ const axiosConfig: AxiosRequestConfig = {
 
 const instance: AxiosInstance = axios.create(axiosConfig);
 
-instance.get("/user").then((res) => res.data);
+instance.get("/users").then((res) => res.data);
 
 class Request {
   async get(url: string): Promise<AxiosResponse> {

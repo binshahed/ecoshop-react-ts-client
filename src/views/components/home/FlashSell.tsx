@@ -1,7 +1,7 @@
 import React from "react";
 import ProductCard from "../common/ProductCard";
 
-const FlashSell = ({ products }: { products: any[] }) => {
+const FlashSell = ({ products }: { products: IProduct[] }) => {
   return (
     <div className="d-flex row ">
       {products.map((product) => (

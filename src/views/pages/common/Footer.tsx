@@ -13,7 +13,7 @@ const Footer = () => {
     <footer>
       <div className="container">
         <div className="row">
-          <div className="col-md-3">
+          <div className="col-md-3 ">
             <img src={footerLogo} alt="" />
             <p className="mt-5 my-4 mr-5 ">
               <FontAwesomeIcon icon={faMapLocationDot} />{" "}
